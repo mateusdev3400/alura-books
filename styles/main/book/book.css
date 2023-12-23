@@ -1,0 +1,99 @@
+@import url('./swiper/swiper.css');
+
+.book__title {
+    background: var(--white-color);
+    color: var(--orange-color);
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.book__layer {
+    align-items: center;
+    display: flex;
+    gap: 58px;
+    justify-content: center;
+}
+
+.book__card {
+    background: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0.4px 0.4px 0.4px 0.4px var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 1rem;
+    width: 588px;
+}
+
+.book__image {
+    width: 100%;
+}
+
+.book__button {
+    background: var(--orange-color);
+    border: none;
+    color: var(--white-color);
+    font-family: var(--poppins-font);
+    font-weight: 700;
+    padding: 1rem 0;   
+}
+
+.book__group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.book__group-image {
+    width: 100px;
+}
+
+.book__group-title {
+    color: var(--orange-color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.book__group-subtitle {
+    color: var(--blue-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.book__menu-list {
+    align-items: center;
+    display: flex;
+    gap: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+    .book__layer {
+        flex-direction: column;
+        gap: 61px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .book__card {
+        width: 380px;
+    }
+
+    .book__button {
+        font-size: 0.8rem;
+    }
+
+    .book__group-title {
+        font-size: 1rem;
+    }
+
+    .book__group-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .book__card p {
+        font-size: 0.8rem;
+    }
+}
