@@ -1,0 +1,8 @@
+@import url('./banner/banner.css');
+@import url('./book/book.css');
+@import url('./topic/topic.css');
+@import url('./newsletter/newsletter.css');
+
+.container {
+    padding: 3rem;
+}
