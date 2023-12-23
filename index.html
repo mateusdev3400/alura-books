@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Books</title>
+    <link rel="shortcut icon" href="assets/images/logo-course.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__group">
+            <figure class="header__image">
+                <input type="checkbox" id="menu-hamburguer" class="header__button"/>
+                <label for="menu-hamburguer">
+                    <span class="header__menu-hamburguer header__image"></span>
+                </label>
+
+                <!-- MENU LIST -->
+                <ul class="menu-list">
+                    <li class="menu-title">Categorias</li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Programação</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Front-end</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Infraestrutura</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Business</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Design & UX</a>
+                    </li>
+                </ul>
+                <!-- MENU LIST -->
+
+                <img src="assets/images/logo-alurabooks.svg" alt="Logo - AluraBooks" class="header__image"/>
+    
+                <h3 class="header__title">Alura<strong class="header__emphasis">Books</strong></h3>
+            </figure>
+    
+            <ul class="header__menu-list header__options">
+                <li class="header__menu-item">
+                    <input type="checkbox" id="menu-options" class="header__button"/>
+                    <label for="menu-options">Categorias</label>
+
+                    <!-- MENU LIST -->
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Programação</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Front-end</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Infraestrutura</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Business</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Design & UX</a>
+                        </li>
+                    </ul>
+                    <!-- MENU LIST -->
+                </li>
+                <li class="header__menu-item">Favoritos</li>
+                <li class="header__menu-item">Minha estante</li>
+            </ul>
+        </div>
+
+        <ul class="header__menu-list header__user">
+            <li class="header__menu-item header__favorite">
+                <a href="#" class="header__menu-link">
+                    <img src="assets/icons/icon-favorite.svg" alt="Icone - Favorito"/>
+                </a>
+            </li>
+            <li class="header__menu-item">
+                <a href="#" class="header__menu-link">
+                    <img src="assets/icons/icon-shop.svg" alt="Icone - Carrinho de compras"/>
+                    <span class="header__menu-span">Minha Sacola</span>
+                </a>
+            </li>
+            <li class="header__menu-item">
+                <a href="#" class="header__menu-link">
+                    <img src="assets/icons/icon-profile.svg" alt="Icone - Perfil"/>
+                    <span class="header__menu-span">Perfil</span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <!-- HEADER -->
+
+    <!-- MAIN -->
+    <main>
+        <section class="container banner">
+            <h2 class="banner__title">Já sabe por onde começar?</h2>
+            <p class="banner__text">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+
+            <input type="search" placeholder="Qual será sua próxima leitura?" class="banner__input banner__icon-search"/>
+        </section>
+
+        <section class="book">
+            <h2 class="book__title">Último lançamento</h2>
+
+            <article class="container book__layer">
+                <div class="book__block">
+                    <!-- SWIPER -->
+                    <div class="swiper">
+                        <div class="swiper-paginaton"></div>
+
+                        <div class="swiper-wrapper" id="show-slide"></div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <!-- SWIPER -->
+                </div>
+
+                <div class="book__block book__card">
+                    <div class="book__group">
+                        <h3 class="book__group-title">Talvez você também se interesse por...</h3>
+                        <h4 class="book__group-subtitle">Angular 11 e Firebase</h4>
+                        <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
+
+                        <ul class="book__menu-list">
+                            <li class="book__menu-item">
+                                <img src="assets/icons/icon-favorite.svg" alt="Icone - Favorito" class="book__image"/>
+                            </li>
+                            <li class="book__menu-item">
+                                <img src="assets/icons/icon-shop.svg" alt="Icone - Carrinho de compras" class="book__image"/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="book__group">
+                        <img src="assets/images/main/authors/logo-angular.svg" alt="Logo do Angular" class="book__image"/>
+                        <button class="book__button">Saiba mais</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="book">
+            <h2 class="book__title">Mais vendidos</h2>
+
+            <article class="container book__layer">
+                <div class="book__block">
+                    <!-- SWIPER -->
+                    <div class="swiper">
+                        <div class="swiper-paginaton"></div>
+
+                        <div class="swiper-wrapper" id="show-slide-1"></div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <!-- SWIPER -->
+                </div>
+
+                <div class="book__block book__card">
+                    <div class="book__group">
+                        <img src="assets/images/main/authors/stars.svg" alt="5 estrelas em forma de icone" class="book__group-image"/>
+                        <h3 class="book__group-title">Autora do Mês</h3>
+                        <h4 class="book__group-subtitle">Juliana Agarikov</h4>
+                        <p>Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+
+                        <ul class="book__menu-list">
+                            <li class="book__menu-item">
+                                <img src="assets/icons/icon-favorite.svg" alt="Icone - Favorito" class="book__image"/>
+                            </li>
+                            <li class="book__menu-item">
+                                <img src="assets/icons/icon-shop.svg" alt="Icone - Carrinho de compras" class="book__image"/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="book__group">
+                        <img src="assets/images/main/authors/author.svg" alt="Foto da autora" class="book__image"/>
+                        <button class="book__button">Saiba mais</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="container topic">
+            <h2 class="topic__title">Tópicos visitados recentemente</h2>
+
+            <ul class="topic__menu-list">
+                <li class="topic__menu-item">Android</li>
+                <li class="topic__menu-item">OO</li>
+                <li class="topic__menu-item">Marketing Digital</li>
+                <li class="topic__menu-item">Agile</li>
+                <li class="topic__menu-item">Startups</li>
+                <li class="topic__menu-item">HTML & CSS</li>
+                <li class="topic__menu-item">Java</li>
+                <li class="topic__menu-item">Python</li>
+            </ul>
+        </section>
+
+        <section class="container newsletter">
+            <div class="newsletter__group">
+                <h2 class="newsletter__title">Fique por dentro das novidades!</h2>
+                <p class="newsletter__text">Atualizações de e-books, novos livros, promoções e outros.</p>
+            </div>
+
+            <input type="email" placeholder="Cadastre seu e-mail" class="newsletter__input newsletter__icon-mensage"/>
+        </section>
+    </main>
+    <!-- MAIN -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <h2 class="footer__title">Grupo Alura</h2>
+
+        <ul class="footer__menu-list" id="menu-list-education"></ul>
+        <ul class="footer__menu-list" id="menu-list-education-online"></ul>
+        <ul class="footer__menu-list" id="menu-list-community"></ul>
+    </footer>
+    <!-- FOOTER -->
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/swiper/swiper-exe.js"></script>
+    <script src="js/app.js" type="module"></script>
+    <!-- SCRIPTS -->
+</body>
+</html>

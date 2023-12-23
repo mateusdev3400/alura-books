@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap');
+
+@import url('./header/header.css');
+@import url('./main/main.css');
+@import url('./footer/footer.css');
+
+:root {
+    --black-color: #000000;
+    --blue-color: #002F52;
+    --gray-color: #474646;
+    --gray-color-2: #EBECEE;
+    --gray-color-3: #858585;
+    --orange-color: #EB9B00;
+    --white-color: #FFFFFF;
+
+    --poppis-font: "Poppins", sans-serif;
+    --josefin-sans-font: "Josefin Sans", sans-serif;
+}
+
+body {
+    background: var(--gray-color-2);
+    color: var(--black-color);
+    font-family: var(--poppis-font);
+    font-size: 1rem;
+    font-weight: 400;
+}
