@@ -1,0 +1,16 @@
+.header__button {
+    display: none;
+}
+
+.header__button:checked ~ .menu-list {
+    display: block;
+}
+
+@media screen and (max-width: 428px) {
+    .header__menu-hamburguer {
+        background: url('../../../assets/images/header/menu-hamburguer-428.svg');
+        display: inline-block;
+        height: 24px;
+        width: 36px;
+    }
+}
